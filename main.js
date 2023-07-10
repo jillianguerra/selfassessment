@@ -5,14 +5,11 @@ const minusBtn = document.querySelector('#minus-button')
 
 let amount = 0
 let sum = 0
-console.log(`it's javascript time`)
 
 amountEl.addEventListener('input', (e) => {
-    console.log('hi')
     amount = parseInt(e.target.value)
 })
 plusBtn.addEventListener('click', (e) => {
-    console.log('button')
     valueEl.textContent = getValue('plus')
 })
 minusBtn.addEventListener('click', (e) => {
