@@ -10,17 +10,20 @@ amountEl.addEventListener('input', (e) => {
     amount = parseInt(e.target.value)
 })
 plusBtn.addEventListener('click', (e) => {
-    valueEl.textContent = getValue('plus')
+    valueEl.textContent = getValue(true)
+    valueEl.style.color = getColor()
 })
 minusBtn.addEventListener('click', (e) => {
- valueEl.textContent = getValue('minus')
+ valueEl.textContent = getValue(false)
+ valueEl.style.color = getColor()
 })
 
 function getValue(method) {
-    if(method === 'plus'){
-        sum += amount
-    } else if(method === 'minus') {
-        sum -= amount
-    }
+    method ? sum += amount :
+    sum -= amount
     return sum
+}
+function getColor() {
+    let color = sum < 0 ? 'red' : 'white'
+    return color
 }

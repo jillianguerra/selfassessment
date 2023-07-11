@@ -1,28 +1,34 @@
 body {
-    background-color: #663399;
+    background-color: black;
     color: white;
     font-family: "Nunito", sans-serif;
     text-align: center;
   }
   h1 {
-    font-size: 40px;
+    font-size: 5vmin;
   }
-  p {
-    font-size: 20px;
+  h2 {
+    font-size: 5vmin;
+  }
+  .stuff {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
   input {
     width: 50px;
     height: 50px;
     font-family: "Nunito", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     border-radius: 10px;
   }
   button {
+    width: 60px;
+    height: 60px;
     color: #663399;
     font-family: "Nunito", sans-serif;
-    padding: 20px;
-    font-size: 20px;
+    font-size: 30px;
     border-radius: 10px;
   }
   button:hover {
